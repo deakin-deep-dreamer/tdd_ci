@@ -10,4 +10,9 @@ public class AddTest {
 		System.out.println("testAddValidAB...");
 		Assert.assertEquals(MathUtil.add(1, 2), 3);
 	}
+	
+	@Test
+	public void testAddInvalidAValidB() {
+		Assert.assertNotNull(MathUtil.add(Integer.parseInt(null), 1));
+	}
 }
